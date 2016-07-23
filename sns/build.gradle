@@ -1,0 +1,72 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.1'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.hucloud.fbex.sns"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.4.0'
+
+    // Google
+    compile 'com.google.android.gms:play-services-auth:9.0.0'
+    compile 'com.android.support:recyclerview-v7:+'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.android.support:cardview-v7:22.2.0'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+
+
+    //firebase
+    compile 'com.google.firebase:firebase-auth:9.0.0'
+    compile 'com.google.firebase:firebase-database:9.0.0'
+    compile 'com.google.firebase:firebase-messaging:9.0.0'
+    compile 'com.google.firebase:firebase-crash:9.0.0'
+    compile 'com.google.firebase:firebase-analytics:9.0.0'
+    compile 'com.google.firebase:firebase-storage:9.0.0'
+
+
+
+//    com.google.firebase:firebase-core:9.2.1	Analytics
+//    com.google.firebase:firebase-database:9.2.1	Realtime Database
+//    com.google.firebase:firebase-storage:9.2.1	Storage
+//    com.google.firebase:firebase-crash:9.2.1	Crash Reporting
+//    com.google.firebase:firebase-auth:9.2.1	Authentication
+//    com.google.firebase:firebase-messaging:9.2.1	Cloud Messaging / Notifications
+//    com.google.firebase:firebase-config:9.2.1	Remote Config
+//    com.google.firebase:firebase-invites:9.2.1	Invites / Dynamic Links
+//    com.google.firebase:firebase-ads:9.2.1	AdMob
+//    com.google.android.gms:play-services-appindexing:9.2.1	App Indexing
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "299858568918",
+    "firebase_url": "https://fbex-1b1f4.firebaseio.com",
+    "project_id": "fbex-1b1f4",
+    "storage_bucket": "fbex-1b1f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299858568918:android:3eebcf9513213f90",
+        "android_client_info": {
+          "package_name": "com.hucloud.fbex.sns"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299858568918-10rs8d3srr6pg7997o2gpkvkofdvb7po.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf85wj8ix1GIQLTQ89Pv2IskHIHEjYR1s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
